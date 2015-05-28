@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8362BA4E1B14828400189352 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8362BA4D1B14828400189352 /* main.m */; };
+		8362BA511B14828400189352 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8362BA501B14828400189352 /* AppDelegate.m */; };
+		8362BA541B14828400189352 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8362BA531B14828400189352 /* ViewController.m */; };
+		8362BA571B14828400189352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8362BA551B14828400189352 /* Main.storyboard */; };
+		8362BA591B14828400189352 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8362BA581B14828400189352 /* Images.xcassets */; };
+		8362BA5C1B14828400189352 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8362BA5A1B14828400189352 /* LaunchScreen.xib */; };
+		8362BA681B14828400189352 /* ZendeskSDK_Urban_Airship_Example_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8362BA671B14828400189352 /* ZendeskSDK_Urban_Airship_Example_AppTests.m */; };
+		8362BA771B14A67200189352 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA761B14A67200189352 /* CFNetwork.framework */; };
+		8362BA791B14A67B00189352 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA781B14A67B00189352 /* CoreGraphics.framework */; };
+		8362BA7B1B14A68100189352 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA7A1B14A68100189352 /* Foundation.framework */; };
+		8362BA7D1B14A68700189352 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA7C1B14A68700189352 /* MobileCoreServices.framework */; };
+		8362BA7F1B14A68B00189352 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA7E1B14A68B00189352 /* Security.framework */; };
+		8362BA811B14A69400189352 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA801B14A69400189352 /* SystemConfiguration.framework */; };
+		8362BA831B14A69900189352 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA821B14A69900189352 /* UIKit.framework */; };
+		8362BA851B14A6A500189352 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA841B14A6A500189352 /* libz.dylib */; };
+		8362BA871B14A6AE00189352 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA861B14A6AE00189352 /* libsqlite3.dylib */; };
+		8362BA891B14A6B500189352 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA881B14A6B500189352 /* CoreTelephony.framework */; };
+		8362BA8B1B14A6BC00189352 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA8A1B14A6BC00189352 /* CoreLocation.framework */; };
+		8362BA8D1B14A6C200189352 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA8C1B14A6C200189352 /* MessageUI.framework */; };
+		8362BA8F1B14A6C700189352 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA8E1B14A6C700189352 /* AudioToolbox.framework */; };
+		8362BA911B14A6CB00189352 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA901B14A6CB00189352 /* MapKit.framework */; };
+		8362BA931B14A71500189352 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8362BA921B14A71500189352 /* AirshipConfig.plist */; };
+		83FF86A41B909BBD00F256C5 /* libUAirship-6.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FF86A31B909BBD00F256C5 /* libUAirship-6.2.0.a */; };
+		A91F148ECE6125D5B553D738 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2352C4C73382E8CD9204A788 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8362BA621B14828400189352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8362BA401B14828400189352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8362BA471B14828400189352;
+			remoteInfo = "ZendeskSDK Urban Airship Example App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83FF86A71B909BD500F256C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2352C4C73382E8CD9204A788 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0637A97D2AADB7FBADFA2E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		74F90DBAD73D16BE2775DEDE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8362BA481B14828400189352 /* UrbanAirshipSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanAirshipSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8362BA4C1B14828400189352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8362BA4D1B14828400189352 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8362BA4F1B14828400189352 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8362BA501B14828400189352 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8362BA521B14828400189352 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8362BA531B14828400189352 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8362BA561B14828400189352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8362BA581B14828400189352 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8362BA5B1B14828400189352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8362BA611B14828400189352 /* ZendeskSDK Urban Airship Example AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZendeskSDK Urban Airship Example AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8362BA661B14828400189352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8362BA671B14828400189352 /* ZendeskSDK_Urban_Airship_Example_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZendeskSDK_Urban_Airship_Example_AppTests.m; sourceTree = "<group>"; };
+		8362BA761B14A67200189352 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8362BA781B14A67B00189352 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8362BA7A1B14A68100189352 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8362BA7C1B14A68700189352 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8362BA7E1B14A68B00189352 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8362BA801B14A69400189352 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8362BA821B14A69900189352 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8362BA841B14A6A500189352 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8362BA861B14A6AE00189352 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8362BA881B14A6B500189352 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8362BA8A1B14A6BC00189352 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8362BA8C1B14A6C200189352 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8362BA8E1B14A6C700189352 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8362BA901B14A6CB00189352 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8362BA921B14A71500189352 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		83FF86A31B909BBD00F256C5 /* libUAirship-6.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-6.2.0.a"; path = "Airship/libUAirship-6.2.0.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8362BA451B14828400189352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8362BA911B14A6CB00189352 /* MapKit.framework in Frameworks */,
+				8362BA8F1B14A6C700189352 /* AudioToolbox.framework in Frameworks */,
+				8362BA8D1B14A6C200189352 /* MessageUI.framework in Frameworks */,
+				8362BA8B1B14A6BC00189352 /* CoreLocation.framework in Frameworks */,
+				83FF86A41B909BBD00F256C5 /* libUAirship-6.2.0.a in Frameworks */,
+				8362BA891B14A6B500189352 /* CoreTelephony.framework in Frameworks */,
+				8362BA871B14A6AE00189352 /* libsqlite3.dylib in Frameworks */,
+				8362BA851B14A6A500189352 /* libz.dylib in Frameworks */,
+				8362BA831B14A69900189352 /* UIKit.framework in Frameworks */,
+				8362BA811B14A69400189352 /* SystemConfiguration.framework in Frameworks */,
+				8362BA7F1B14A68B00189352 /* Security.framework in Frameworks */,
+				8362BA7D1B14A68700189352 /* MobileCoreServices.framework in Frameworks */,
+				8362BA7B1B14A68100189352 /* Foundation.framework in Frameworks */,
+				8362BA791B14A67B00189352 /* CoreGraphics.framework in Frameworks */,
+				8362BA771B14A67200189352 /* CFNetwork.framework in Frameworks */,
+				A91F148ECE6125D5B553D738 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8362BA5E1B14828400189352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		767D1D5AE01E1F32B0676FCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74F90DBAD73D16BE2775DEDE /* Pods.debug.xcconfig */,
+				5D0637A97D2AADB7FBADFA2E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8362BA3F1B14828400189352 = {
+			isa = PBXGroup;
+			children = (
+				8362BA4A1B14828400189352 /* ZendeskSDK Urban Airship Example App */,
+				8362BA641B14828400189352 /* ZendeskSDK Urban Airship Example AppTests */,
+				8362BA491B14828400189352 /* Products */,
+				767D1D5AE01E1F32B0676FCD /* Pods */,
+				BA227557C861230861263615 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8362BA491B14828400189352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8362BA481B14828400189352 /* UrbanAirshipSample.app */,
+				8362BA611B14828400189352 /* ZendeskSDK Urban Airship Example AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8362BA4A1B14828400189352 /* ZendeskSDK Urban Airship Example App */ = {
+			isa = PBXGroup;
+			children = (
+				8362BA4F1B14828400189352 /* AppDelegate.h */,
+				8362BA501B14828400189352 /* AppDelegate.m */,
+				8362BA521B14828400189352 /* ViewController.h */,
+				8362BA531B14828400189352 /* ViewController.m */,
+				8362BA551B14828400189352 /* Main.storyboard */,
+				8362BA581B14828400189352 /* Images.xcassets */,
+				8362BA5A1B14828400189352 /* LaunchScreen.xib */,
+				8362BA4B1B14828400189352 /* Supporting Files */,
+			);
+			path = "ZendeskSDK Urban Airship Example App";
+			sourceTree = "<group>";
+		};
+		8362BA4B1B14828400189352 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8362BA4C1B14828400189352 /* Info.plist */,
+				8362BA4D1B14828400189352 /* main.m */,
+				8362BA921B14A71500189352 /* AirshipConfig.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8362BA641B14828400189352 /* ZendeskSDK Urban Airship Example AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8362BA671B14828400189352 /* ZendeskSDK_Urban_Airship_Example_AppTests.m */,
+				8362BA651B14828400189352 /* Supporting Files */,
+			);
+			path = "ZendeskSDK Urban Airship Example AppTests";
+			sourceTree = "<group>";
+		};
+		8362BA651B14828400189352 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8362BA661B14828400189352 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA227557C861230861263615 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83FF86A31B909BBD00F256C5 /* libUAirship-6.2.0.a */,
+				8362BA901B14A6CB00189352 /* MapKit.framework */,
+				8362BA8E1B14A6C700189352 /* AudioToolbox.framework */,
+				8362BA8C1B14A6C200189352 /* MessageUI.framework */,
+				8362BA8A1B14A6BC00189352 /* CoreLocation.framework */,
+				8362BA881B14A6B500189352 /* CoreTelephony.framework */,
+				8362BA861B14A6AE00189352 /* libsqlite3.dylib */,
+				8362BA841B14A6A500189352 /* libz.dylib */,
+				8362BA821B14A69900189352 /* UIKit.framework */,
+				8362BA801B14A69400189352 /* SystemConfiguration.framework */,
+				8362BA7E1B14A68B00189352 /* Security.framework */,
+				8362BA7C1B14A68700189352 /* MobileCoreServices.framework */,
+				8362BA7A1B14A68100189352 /* Foundation.framework */,
+				8362BA781B14A67B00189352 /* CoreGraphics.framework */,
+				8362BA761B14A67200189352 /* CFNetwork.framework */,
+				2352C4C73382E8CD9204A788 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8362BA471B14828400189352 /* UrbanAirshipSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8362BA6B1B14828400189352 /* Build configuration list for PBXNativeTarget "UrbanAirshipSample" */;
+			buildPhases = (
+				F3D3870D1FB04A50886A8F52 /* Check Pods Manifest.lock */,
+				8362BA441B14828400189352 /* Sources */,
+				8362BA451B14828400189352 /* Frameworks */,
+				8362BA461B14828400189352 /* Resources */,
+				5D7CFF7B057297BC4C78D781 /* Copy Pods Resources */,
+				83FF86A71B909BD500F256C5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UrbanAirshipSample;
+			productName = "ZendeskSDK Urban Airship Example App";
+			productReference = 8362BA481B14828400189352 /* UrbanAirshipSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8362BA601B14828400189352 /* ZendeskSDK Urban Airship Example AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8362BA6E1B14828400189352 /* Build configuration list for PBXNativeTarget "ZendeskSDK Urban Airship Example AppTests" */;
+			buildPhases = (
+				8362BA5D1B14828400189352 /* Sources */,
+				8362BA5E1B14828400189352 /* Frameworks */,
+				8362BA5F1B14828400189352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8362BA631B14828400189352 /* PBXTargetDependency */,
+			);
+			name = "ZendeskSDK Urban Airship Example AppTests";
+			productName = "ZendeskSDK Urban Airship Example AppTests";
+			productReference = 8362BA611B14828400189352 /* ZendeskSDK Urban Airship Example AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8362BA401B14828400189352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Steven Diviney";
+				TargetAttributes = {
+					8362BA471B14828400189352 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7529UAQB93;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					8362BA601B14828400189352 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 8362BA471B14828400189352;
+					};
+				};
+			};
+			buildConfigurationList = 8362BA431B14828400189352 /* Build configuration list for PBXProject "ZendeskSDK Urban Airship Example App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8362BA3F1B14828400189352;
+			productRefGroup = 8362BA491B14828400189352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8362BA471B14828400189352 /* UrbanAirshipSample */,
+				8362BA601B14828400189352 /* ZendeskSDK Urban Airship Example AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8362BA461B14828400189352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8362BA571B14828400189352 /* Main.storyboard in Resources */,
+				8362BA5C1B14828400189352 /* LaunchScreen.xib in Resources */,
+				8362BA591B14828400189352 /* Images.xcassets in Resources */,
+				8362BA931B14A71500189352 /* AirshipConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8362BA5F1B14828400189352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D7CFF7B057297BC4C78D781 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D3870D1FB04A50886A8F52 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8362BA441B14828400189352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8362BA541B14828400189352 /* ViewController.m in Sources */,
+				8362BA511B14828400189352 /* AppDelegate.m in Sources */,
+				8362BA4E1B14828400189352 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8362BA5D1B14828400189352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8362BA681B14828400189352 /* ZendeskSDK_Urban_Airship_Example_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8362BA631B14828400189352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8362BA471B14828400189352 /* UrbanAirshipSample */;
+			targetProxy = 8362BA621B14828400189352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8362BA551B14828400189352 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8362BA561B14828400189352 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8362BA5A1B14828400189352 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8362BA5B1B14828400189352 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8362BA691B14828400189352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8362BA6A1B14828400189352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8362BA6C1B14828400189352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F90DBAD73D16BE2775DEDE /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/Airship/\"/**",
+					"\"${PODS_ROOT}/Headers/Public/ZendeskSDK\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = "ZendeskSDK Urban Airship Example App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Airship",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"ZendeskSDK\"",
+					"-lsqlite3",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0ec45672-7686-42b5-b1ca-c90092a61cf8";
+			};
+			name = Debug;
+		};
+		8362BA6D1B14828400189352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0637A97D2AADB7FBADFA2E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/Airship/\"/**",
+					"\"${PODS_ROOT}/Headers/Public/ZendeskSDK\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = "ZendeskSDK Urban Airship Example App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Airship",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"ZendeskSDK\"",
+					"-lsqlite3",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0ec45672-7686-42b5-b1ca-c90092a61cf8";
+			};
+			name = Release;
+		};
+		8362BA6F1B14828400189352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZendeskSDK Urban Airship Example AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZendeskSDK Urban Airship Example App.app/ZendeskSDK Urban Airship Example App";
+			};
+			name = Debug;
+		};
+		8362BA701B14828400189352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZendeskSDK Urban Airship Example AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZendeskSDK Urban Airship Example App.app/ZendeskSDK Urban Airship Example App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8362BA431B14828400189352 /* Build configuration list for PBXProject "ZendeskSDK Urban Airship Example App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8362BA691B14828400189352 /* Debug */,
+				8362BA6A1B14828400189352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8362BA6B1B14828400189352 /* Build configuration list for PBXNativeTarget "UrbanAirshipSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8362BA6C1B14828400189352 /* Debug */,
+				8362BA6D1B14828400189352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8362BA6E1B14828400189352 /* Build configuration list for PBXNativeTarget "ZendeskSDK Urban Airship Example AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8362BA6F1B14828400189352 /* Debug */,
+				8362BA701B14828400189352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8362BA401B14828400189352 /* Project object */;
+}
