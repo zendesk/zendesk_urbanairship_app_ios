@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="width" constant="163" id="LyM-Eg-MKX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-YU-Dtf">
@@ -66,13 +66,24 @@
                                     <action selector="showHelpCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ipt-uD-B8l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFm-Dw-DES">
+                                <rect key="frame" x="125" y="409" width="71" height="30"/>
+                                <state key="normal" title="Ticket List">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTicketList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hlc-ul-5ed"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MaQ-Xr-C4m" secondAttribute="bottom" constant="75" id="0mS-K6-dmI"/>
                             <constraint firstItem="Vdt-wW-s6Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6xE-gO-Gi2"/>
                             <constraint firstItem="tZb-Dw-ou4" firstAttribute="top" secondItem="Vdt-wW-s6Q" secondAttribute="bottom" constant="15" id="Bp2-Lo-vZp"/>
+                            <constraint firstAttribute="centerX" secondItem="eFm-Dw-DES" secondAttribute="centerX" constant="-0.5" id="Ns7-pS-qRg"/>
                             <constraint firstAttribute="centerX" secondItem="Vdt-wW-s6Q" secondAttribute="centerX" constant="-0.5" id="TX0-fN-re2"/>
+                            <constraint firstItem="MaQ-Xr-C4m" firstAttribute="top" secondItem="eFm-Dw-DES" secondAttribute="bottom" constant="35" id="Wgn-8q-gLr"/>
                             <constraint firstAttribute="centerX" secondItem="tZb-Dw-ou4" secondAttribute="centerX" constant="-0.5" id="X3a-jn-AbF"/>
                             <constraint firstAttribute="centerX" secondItem="Tez-YU-Dtf" secondAttribute="centerX" constant="-0.5" id="l4v-uI-sj3"/>
                             <constraint firstItem="Tez-YU-Dtf" firstAttribute="top" secondItem="tZb-Dw-ou4" secondAttribute="bottom" constant="47" id="muF-6p-Jzz"/>

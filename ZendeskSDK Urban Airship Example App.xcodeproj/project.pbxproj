@@ -29,7 +29,6 @@
 		8362BA8F1B14A6C700189352 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA8E1B14A6C700189352 /* AudioToolbox.framework */; };
 		8362BA911B14A6CB00189352 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA901B14A6CB00189352 /* MapKit.framework */; };
 		8362BA931B14A71500189352 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8362BA921B14A71500189352 /* AirshipConfig.plist */; };
-		83FF86A41B909BBD00F256C5 /* libUAirship-6.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FF86A31B909BBD00F256C5 /* libUAirship-6.2.0.a */; };
 		A91F148ECE6125D5B553D738 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2352C4C73382E8CD9204A788 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -100,7 +99,6 @@
 				8362BA8F1B14A6C700189352 /* AudioToolbox.framework in Frameworks */,
 				8362BA8D1B14A6C200189352 /* MessageUI.framework in Frameworks */,
 				8362BA8B1B14A6BC00189352 /* CoreLocation.framework in Frameworks */,
-				83FF86A41B909BBD00F256C5 /* libUAirship-6.2.0.a in Frameworks */,
 				8362BA891B14A6B500189352 /* CoreTelephony.framework in Frameworks */,
 				8362BA871B14A6AE00189352 /* libsqlite3.dylib in Frameworks */,
 				8362BA851B14A6A500189352 /* libz.dylib in Frameworks */,
@@ -266,7 +264,7 @@
 		8362BA401B14828400189352 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Steven Diviney";
 				TargetAttributes = {
 					8362BA471B14828400189352 = {
@@ -427,6 +425,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -496,7 +495,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
-					"\"$(PROJECT_DIR)/Airship/\"/**",
 					"\"${PODS_ROOT}/Headers/Public/ZendeskSDK\"",
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -504,10 +502,7 @@
 				INFOPLIST_FILE = "ZendeskSDK Urban Airship Example App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Airship",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -516,6 +511,7 @@
 					"-lsqlite3",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.<Your-bundle-id>";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0ec45672-7686-42b5-b1ca-c90092a61cf8";
 			};
@@ -529,7 +525,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
-					"\"$(PROJECT_DIR)/Airship/\"/**",
 					"\"${PODS_ROOT}/Headers/Public/ZendeskSDK\"",
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -537,10 +532,7 @@
 				INFOPLIST_FILE = "ZendeskSDK Urban Airship Example App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Airship",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -549,6 +541,7 @@
 					"-lsqlite3",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.<Your-bundle-id>";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0ec45672-7686-42b5-b1ca-c90092a61cf8";
 			};
@@ -568,6 +561,7 @@
 				);
 				INFOPLIST_FILE = "ZendeskSDK Urban Airship Example AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZendeskSDK Urban Airship Example App.app/ZendeskSDK Urban Airship Example App";
 			};
@@ -583,6 +577,7 @@
 				);
 				INFOPLIST_FILE = "ZendeskSDK Urban Airship Example AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZendeskSDK Urban Airship Example App.app/ZendeskSDK Urban Airship Example App";
 			};

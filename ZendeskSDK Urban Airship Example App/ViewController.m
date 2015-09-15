@@ -28,8 +28,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
 - (IBAction)showHelpCenter:(id)sender {
-    //[ZDKHelpCenter showHelpCenterWithNavController:self.navigationController];
+    [ZDKHelpCenter showHelpCenterWithNavController:self.navigationController];
+}
+
+
+- (IBAction)showTicketList:(id)sender {
     [ZDKRequests showRequestListWithNavController:self.navigationController];
 }
 

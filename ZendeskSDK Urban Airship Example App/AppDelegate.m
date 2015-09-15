@@ -72,30 +72,6 @@ static NSString * const clientId = @"Your_client_id";
     // time to enable push to increase the likelihood that the user will accept
     // notifications.
     [UAirship push].userPushNotificationsEnabled = YES;
-    
-    /**
-    if ([UIApplication instancesRespondToSelector:@selector(registerForRemoteNotifications)]) {
-        
-        UIUserNotificationType types = UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound;
-        
-        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
-        [application registerUserNotificationSettings:settings];
-        [application registerForRemoteNotifications];
-        
-    } else if ([UIApplication instancesRespondToSelector:@selector(registerForRemoteNotificationTypes:)]) {
-        
-        
-    #pragma clang diagnostic push
-    #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        UIRemoteNotificationType types = UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound;
-        
-        [application registerForRemoteNotificationTypes:types];
-    #pragma clang diagnostic pop
-
-
-    }
-     **/
-    
    
     return YES;
 }
