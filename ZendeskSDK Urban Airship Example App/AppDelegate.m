@@ -100,12 +100,6 @@ static NSString * const clientId = @"Your_client_id";
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
     
-
-    NSMutableDictionary *pushUtilUserInfo = [[NSMutableDictionary alloc] initWithDictionary:userInfo];
-    [pushUtilUserInfo setObject:userInfo[@"tid"] forKey:@"zendesk_sdk_request_id"];
-    
-    
-    
     [ZDKPushUtil handlePush:[[NSDictionary alloc] initWithDictionary:pushUtilUserInfo]
              forApplication:application
           presentationStyle:UIModalPresentationFormSheet
