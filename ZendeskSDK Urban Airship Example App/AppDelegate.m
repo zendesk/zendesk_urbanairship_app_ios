@@ -23,9 +23,9 @@
 
 #import "ViewController.h"
 
-static NSString * const appId = @"Your_app_id";
-static NSString * const zendeskURL = @"Your_zendesk_url";
-static NSString * const clientId = @"Your_client_id";
+NSString * const appId = @"Your_app_id";
+NSString * const zendeskURL = @"Your_zendesk_url";
+NSString * const clientId = @"Your_client_id";
 
 @interface AppDelegate ()
 
@@ -42,10 +42,6 @@ static NSString * const clientId = @"Your_client_id";
     identity.email = @"urbanairshiptest@example.com";
     
     [ZDKConfig instance].userIdentity = identity;
-    
-    //Initalize the Zendesk SDK
-    [[ZDKConfig instance] initializeWithAppId:appId zendeskUrl:zendeskURL andClientId:clientId];
-    
  
     [ZDKLogger enable:YES];
     
@@ -100,7 +96,7 @@ static NSString * const clientId = @"Your_client_id";
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
     
-    [ZDKPushUtil handlePush:[[NSDictionary alloc] initWithDictionary:pushUtilUserInfo]
+    [ZDKPushUtil handlePush:[[NSDictionary alloc] initWithDictionary:userInfo]
              forApplication:application
           presentationStyle:UIModalPresentationFormSheet
                 layoutGuide:ZDKLayoutRespectTop

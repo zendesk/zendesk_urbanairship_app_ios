@@ -21,6 +21,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+extern NSString * const appId;
+extern NSString * const zendeskURL;
+extern NSString * const clientId;
 
 @end
 
