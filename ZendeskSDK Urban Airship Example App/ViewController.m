@@ -21,32 +21,30 @@
 
 @interface ViewController ()
 
-@property (atomic) BOOL sdkIsReady;
-
 @end
 
 @implementation ViewController
 
+static BOOL isZendeskSDKInitialised = NO;
 
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    if ( ! isZendeskSDKInitialised) {
         
         
         [[ZDKConfig instance] initializeWithAppId:appId
                                        zendeskUrl:zendeskURL
                                          ClientId:clientId
                                         onSuccess:^{
-                                            _sdkIsReady = YES;
+                                            isZendeskSDKInitialised = YES;
                                         }
                                           onError:^(NSError *error) {
                                               
                                           }];
-    });
+    }
     
 }
 
@@ -56,7 +54,7 @@
 }
 
 - (IBAction)showHelpCenter:(id)sender {
-    if ( ! _sdkIsReady ) {
+    if ( ! isZendeskSDKInitialised ) {
         [self showInitializationAlert];
         return;
     }
@@ -66,7 +64,7 @@
 
 
 - (IBAction)showTicketList:(id)sender {
-    if ( ! _sdkIsReady ) {
+    if ( ! isZendeskSDKInitialised ) {
         [self showInitializationAlert];
         return;
     }
@@ -82,7 +80,7 @@
 
 - (IBAction)registerForPush:(id)sender {
    
-    if ( ! _sdkIsReady ) {
+    if ( ! isZendeskSDKInitialised ) {
         [self showInitializationAlert];
         return;
     }
@@ -116,7 +114,7 @@
 
 - (IBAction)unregisterForPush:(id)sender {
     
-    if ( ! _sdkIsReady ) {
+    if ( ! isZendeskSDKInitialised ) {
         [self showInitializationAlert];
         return;
     }
