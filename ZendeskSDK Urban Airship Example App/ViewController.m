@@ -14,6 +14,7 @@
  *
  */
 
+#import "AppDelegate.h"
 #import "ViewController.h"
 #import <ZendeskSDK/ZendeskSDK.h>
 
@@ -24,18 +25,50 @@
 
 @implementation ViewController
 
+static BOOL isZendeskSDKInitialised = NO;
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    if ( ! isZendeskSDKInitialised) {
+        
+        
+        [[ZDKConfig instance] initializeWithAppId:appId
+                                       zendeskUrl:zendeskURL
+                                         ClientId:clientId
+                                        onSuccess:^{
+                                            isZendeskSDKInitialised = YES;
+                                        }
+                                          onError:^(NSError *error) {
+                                              
+                                          }];
+    }
+    
 }
 
+- (void) showInitializationAlert {
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Wait a second..." message:@"I just need to herd some cats" delegate:self cancelButtonTitle:@"OK, I'll try again in a moment" otherButtonTitles:nil];
+    [alert show];
+}
 
 - (IBAction)showHelpCenter:(id)sender {
+    if ( ! isZendeskSDKInitialised ) {
+        [self showInitializationAlert];
+        return;
+    }
+    
     [ZDKHelpCenter showHelpCenterWithNavController:self.navigationController];
 }
 
 
 - (IBAction)showTicketList:(id)sender {
+    if ( ! isZendeskSDKInitialised ) {
+        [self showInitializationAlert];
+        return;
+    }
+    
     [ZDKRequests showRequestListWithNavController:self.navigationController];
 }
 
@@ -47,6 +80,11 @@
 
 - (IBAction)registerForPush:(id)sender {
    
+    if ( ! isZendeskSDKInitialised ) {
+        [self showInitializationAlert];
+        return;
+    }
+    
     NSString *identifier = [self getDeviceId];
     if ( ! identifier) {
         NSLog(@"No identifier found");
@@ -75,6 +113,11 @@
 
 
 - (IBAction)unregisterForPush:(id)sender {
+    
+    if ( ! isZendeskSDKInitialised ) {
+        [self showInitializationAlert];
+        return;
+    }
     
     NSString *identifier = [self getDeviceId];
     if ( ! identifier) {
