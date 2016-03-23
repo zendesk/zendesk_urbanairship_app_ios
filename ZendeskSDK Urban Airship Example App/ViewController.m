@@ -25,49 +25,18 @@
 
 @implementation ViewController
 
-static BOOL isZendeskSDKInitialised = NO;
-
-
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    if ( ! isZendeskSDKInitialised) {
-        
-        
-        [[ZDKConfig instance] initializeWithAppId:appId
-                                       zendeskUrl:zendeskURL
-                                         ClientId:clientId
-                                        onSuccess:^{
-                                            isZendeskSDKInitialised = YES;
-                                        }
-                                          onError:^(NSError *error) {
-                                              
-                                          }];
-    }
-    
-}
-
-- (void) showInitializationAlert {
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Wait a second..." message:@"I just need to herd some cats" delegate:self cancelButtonTitle:@"OK, I'll try again in a moment" otherButtonTitles:nil];
-    [alert show];
+    [super viewDidLoad]; 
 }
 
 - (IBAction)showHelpCenter:(id)sender {
-    if ( ! isZendeskSDKInitialised ) {
-        [self showInitializationAlert];
-        return;
-    }
     
     [ZDKHelpCenter showHelpCenterWithNavController:self.navigationController];
 }
 
 
 - (IBAction)showTicketList:(id)sender {
-    if ( ! isZendeskSDKInitialised ) {
-        [self showInitializationAlert];
-        return;
-    }
     
     [ZDKRequests showRequestListWithNavController:self.navigationController];
 }
@@ -79,12 +48,7 @@ static BOOL isZendeskSDKInitialised = NO;
 
 
 - (IBAction)registerForPush:(id)sender {
-   
-    if ( ! isZendeskSDKInitialised ) {
-        [self showInitializationAlert];
-        return;
-    }
-    
+
     NSString *identifier = [self getDeviceId];
     if ( ! identifier) {
         NSLog(@"No identifier found");
@@ -113,11 +77,6 @@ static BOOL isZendeskSDKInitialised = NO;
 
 
 - (IBAction)unregisterForPush:(id)sender {
-    
-    if ( ! isZendeskSDKInitialised ) {
-        [self showInitializationAlert];
-        return;
-    }
     
     NSString *identifier = [self getDeviceId];
     if ( ! identifier) {

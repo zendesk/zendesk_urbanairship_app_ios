@@ -36,7 +36,7 @@ NSString * const clientId = @"Your_client_id";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    //Create an identity
+    // Create an identity
     ZDKAnonymousIdentity *identity = [ZDKAnonymousIdentity new];
     
     identity.email = @"urbanairshiptest@example.com";
@@ -45,7 +45,10 @@ NSString * const clientId = @"Your_client_id";
  
     [ZDKLogger enable:YES];
     
-    //Register with Urban Airship
+    // Initialize the SDK
+    [[ZDKConfig instance] initializeWithAppId:appId zendeskUrl:zendeskURL clientId:clientId];
+    
+    // Register with Urban Airship
     
     // Populate AirshipConfig.plist with your app's info from https://go.urbanairship.com
     // or set runtime properties here.
