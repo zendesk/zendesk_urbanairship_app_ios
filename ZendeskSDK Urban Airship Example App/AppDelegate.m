@@ -45,6 +45,11 @@ NSString * const clientId = @"Your_client_id";
  
     [ZDKLogger enable:YES];
     
+    //init the SDK
+    [[ZDKConfig instance] initializeWithAppId:appId
+                                   zendeskUrl:zendeskURL
+                                     clientId:clientId];
+    
     //Register with Urban Airship
     
     // Populate AirshipConfig.plist with your app's info from https://go.urbanairship.com
