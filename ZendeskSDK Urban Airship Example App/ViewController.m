@@ -25,26 +25,11 @@
 
 @implementation ViewController
 
-static BOOL isZendeskSDKInitialised = NO;
 
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    if ( ! isZendeskSDKInitialised) {
-        
-        
-        [[ZDKConfig instance] initializeWithAppId:appId
-                                       zendeskUrl:zendeskURL
-                                         ClientId:clientId
-                                        onSuccess:^{
-                                            isZendeskSDKInitialised = YES;
-                                        }
-                                          onError:^(NSError *error) {
-                                              
-                                          }];
-    }
     
 }
 
@@ -54,22 +39,12 @@ static BOOL isZendeskSDKInitialised = NO;
 }
 
 - (IBAction)showHelpCenter:(id)sender {
-    if ( ! isZendeskSDKInitialised ) {
-        [self showInitializationAlert];
-        return;
-    }
-    
-    [ZDKHelpCenter showHelpCenterWithNavController:self.navigationController];
+    [ZDKHelpCenter presentHelpCenterWithViewController:self];
 }
 
 
 - (IBAction)showTicketList:(id)sender {
-    if ( ! isZendeskSDKInitialised ) {
-        [self showInitializationAlert];
-        return;
-    }
-    
-    [ZDKRequests showRequestListWithNavController:self.navigationController];
+    [ZDKRequests presentRequestListWithViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,12 +54,6 @@ static BOOL isZendeskSDKInitialised = NO;
 
 
 - (IBAction)registerForPush:(id)sender {
-   
-    if ( ! isZendeskSDKInitialised ) {
-        [self showInitializationAlert];
-        return;
-    }
-    
     NSString *identifier = [self getDeviceId];
     if ( ! identifier) {
         NSLog(@"No identifier found");
@@ -113,12 +82,6 @@ static BOOL isZendeskSDKInitialised = NO;
 
 
 - (IBAction)unregisterForPush:(id)sender {
-    
-    if ( ! isZendeskSDKInitialised ) {
-        [self showInitializationAlert];
-        return;
-    }
-    
     NSString *identifier = [self getDeviceId];
     if ( ! identifier) {
         NSLog(@"No identifier found");
