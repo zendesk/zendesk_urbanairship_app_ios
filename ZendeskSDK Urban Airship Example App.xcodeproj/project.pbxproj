@@ -29,7 +29,6 @@
 		8362BA8F1B14A6C700189352 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA8E1B14A6C700189352 /* AudioToolbox.framework */; };
 		8362BA911B14A6CB00189352 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362BA901B14A6CB00189352 /* MapKit.framework */; };
 		8362BA931B14A71500189352 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8362BA921B14A71500189352 /* AirshipConfig.plist */; };
-		A91F148ECE6125D5B553D738 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2352C4C73382E8CD9204A788 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2352C4C73382E8CD9204A788 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0637A97D2AADB7FBADFA2E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		74F90DBAD73D16BE2775DEDE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8362BA481B14828400189352 /* UrbanAirshipSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanAirshipSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +107,6 @@
 				8362BA7B1B14A68100189352 /* Foundation.framework in Frameworks */,
 				8362BA791B14A67B00189352 /* CoreGraphics.framework in Frameworks */,
 				8362BA771B14A67200189352 /* CFNetwork.framework in Frameworks */,
-				A91F148ECE6125D5B553D738 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +209,6 @@
 				8362BA7A1B14A68100189352 /* Foundation.framework */,
 				8362BA781B14A67B00189352 /* CoreGraphics.framework */,
 				8362BA761B14A67200189352 /* CFNetwork.framework */,
-				2352C4C73382E8CD9204A788 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
